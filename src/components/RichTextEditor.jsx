@@ -1,16 +1,17 @@
-import { Grid2, Typography } from '@mui/material';
+import { Grid2, Typography, useMediaQuery } from '@mui/material';
 import React from 'react'
 import ReactQuill from 'react-quill'
 import "react-quill/dist/quill.snow.css";
 
 function RichTextEditor() {
 
+  const isMobile = useMediaQuery("(max-width:600px)"); 
 
     
   return (
     <Grid2 item border={0} borderRadius={2} mt={1} pb={1} size={{ xs: 10 , sm:6 }}   boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px'    >
         <Typography mb={1} textAlign='center'> Rich Text Editor </Typography>
-        <ReactQuill value={''} style={{width:'100%', maxWidth:'350px', borderBottom:'0px solid yellow'}} 
+        <ReactQuill value={''} style={{width:'100%', maxWidth: isMobile? "350px" : "400px", borderBottom:'0px solid yellow'}} 
           modules={{toolbar:true}}
         />
 

@@ -35,7 +35,7 @@ function Counter() {
 
       <Grid2 container border={0} gap={1} alignContent='center' justifyContent='center' >
         <Box  onClick={decrementCount}  border={2} borderColor='#47A8BD' borderRadius='50%' height='25px' width='25px' padding={0.2} alignSelf='center'
-          sx={{placeContent:'center', textAlign:'center'}}
+          sx={{placeContent:'center', textAlign:'center', cursor:'pointer'}}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path fill="#47A8BD" d="M18 16H6c-1.654 0-3-1.346-3-3s1.346-3 3-3h12c1.654 0 3 1.346 3 3s-1.346 3-3 3M6 12c-.551 0-1 .449-1 1s.449 1 1 1h12c.551 0 1-.449 1-1s-.449-1-1-1z" />
@@ -45,7 +45,7 @@ function Counter() {
         <Button  onClick={resetCount} sx={{ fontWeight: 'bolder', zIndex: 3,borderWidth:2 }} variant="outlined"> Reset </Button>
         {/* <Button onClick={incrementCount} sx={{ fontWeight: 'bolder', zIndex: 3, borderRadius: 10 }} variant="outlined">+</Button> */}
         <Box  onClick={incrementCount}  border={2} borderColor='#47A8BD' borderRadius='50%' height='25px' width='25px' padding={0.2} alignSelf='center'
-           sx={{placeContent:'center', textAlign:'center'}}
+           sx={{placeContent:'center', textAlign:'center', cursor:'pointer'}}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path fill="#47A8BD" d="M4 9h5V4h6v5h5v6h-5v5H9v-5H4zm7 4v5h2v-5h5v-2h-5V6h-2v5H6v2z" />

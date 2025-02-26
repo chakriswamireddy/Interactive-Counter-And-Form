@@ -61,7 +61,7 @@ function Home() {
       </Grid2> */}
 
 <div style={{ position: "absolute", bottom: -70, width: "100%", zIndex: 2, pointerEvents: "none" }}>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 130 1440 ${320+ (count*10)}`}>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 110 1440 ${320+ (count*10)}`}>
         <animated.path fill="#51BBFE" fillOpacity="1" d={d} />
         
         <rect x="0" y="320" width="1440" height={fillerHeight} fill="#51BBFE" />

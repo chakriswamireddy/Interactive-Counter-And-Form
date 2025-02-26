@@ -83,13 +83,13 @@ function DataForm() {
     return (
 
       
-        <Grid2 item padding={{ xs: 0, sm: 2 }} container gap={{xs:2, sm:4}} border={0} alignContent='start' justifyContent='center' size={12}
+        <Grid2 item padding={{ xs: 0, sm: 2 }} container gap={{xs:2, sm:4}} border={0} alignContent='center' justifyContent='center' size={12}
             // boxShadow='rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px' 
-            borderRadius={4} direction={{ xs: 'column', sm: 'row' }} height='max-content' pt={4}
+            borderRadius={4} direction={{ xs: 'column', sm: 'row' }} height='max-content' p={{xs:4, md:0}} pt={4} 
         >
             
 
-            <Grid2 direction='column' gap={3}  size={{ xs: 12, sm: 5 }}  border={0} container>
+            <Grid2 direction='column' gap={3}  size={{ xs: 12, sm: 5 }}  border={0} container justifyContent='end' >
                 <TextField id="standard-basic" value={uId} label="User Id" variant="outlined" sx={{ zIndex: 3 }} />
                 <TextField id="standard-basic" type='text' label="Name" variant="standard" sx={{ zIndex: 3 }}
                    value={name} onChange={(e) => setName(e.target.value)} />
